@@ -1,0 +1,54 @@
+@cl-fff:#ffffff;
+@cl-333:#333333;
+@cl-red:red;
+/* font */
+.color(@cl:#444){
+	color:@cl;
+} 
+.fsize(@f:12px){
+	font-size: @f;
+}
+.fwei(@wei:bold){
+	font-weight: @wei;
+}
+/* background */
+.bgImage(@url:'images/pic_1.jpg'){
+	background-image: url(@url); 
+}
+.bgPos(@pos:center){
+	background-position: @pos;
+}
+.bgRep(@rep:no-repeat){
+	background-repeat: no-repeat;
+}
+.bgColor(@color:red){
+	background-color: @color;
+}
+.bgSize(@size:cover){
+	background-size: @size;
+}
+/* width */
+.wid(@w:100%){
+	width:@w;
+}
+/* height */
+.hei(@h:100%){
+	height:@h;
+}
+.heiM(@h:100%){
+	height:@h;
+	line-height:@h - 1;
+}
+/* padding */
+.padB(@b:10px){
+	padding-bottom: @b;
+}
+.padT(@b:10px){
+	padding-top: @b;
+}
+.padL(@b:10px){
+	padding-left: @b;
+}
+.padR(@b:10px){
+	padding-right: @b;
+}
