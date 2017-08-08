@@ -7,6 +7,7 @@
 			store.state属性：<br />
 			<li v-for="todo in todos1">
 				{{todo.id}}---{{todo.text}}---{{todo.done}}
+				<span v-if="todo.flag">{{todo.flag}}</span>
 			</li>
 		</ul>
 
@@ -17,7 +18,7 @@
 			</li>
 		</ul>
 
-		<div class="add-new-prop">Add new Prop</div>
+		<div class="add-new-prop" @click="addNewProp()">Add new Prop</div>
 	</div>
 </template>
 
@@ -41,12 +42,14 @@
 			}
 		},
 		methods:{
-			increment(){
-				console.log(this.$store)
-				this.$store.commit({type:'increment',amount:4});
+			increment:function(){
+				this.$store.dispatch('increment',{amount:10});
 			},
-			decrement(){
-				this.$store.commit('decrement',6);
+			decrement:function(){
+				this.$store.dispatch('decrement');
+			},
+			addNewProp:function(){
+				this.$store.dispatch('addNewProp');
 			}
 		}
 	}
