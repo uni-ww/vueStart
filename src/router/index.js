@@ -1,7 +1,9 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Swiper from '../components/swiper/swiper'
-import HomeTem from '../components/home'
+import Vue from 'vue';
+import Router from 'vue-router';
+import Swiper from '../components/swiper/swiper';
+import HomeTem from '../components/home';
+import VuexDemo from '../components/vuex-demo';
+import Start from '../components/start';
 // const Header = resolve => {
 // 	require.ensure(['../components/headFoot/header.vue'],() => {
 // 		resolve(require('../components/headFoot/header.vue'));
@@ -102,8 +104,11 @@ const scrollBehavior = (to,from,savedPosition) => {
 	}
 }
 const routes = [
-	{ path: '', component: HomeTem },
+	{ path:'', component:Start},
+	{ path:'/home', component:HomeTem},
+	{ path: '/vuexDemo', component: VuexDemo },
 	{ path: '/foo', component: Foo },
+	{ path:'/swiper',component:Swiper},
 	// { path: '/foo', component: Foo },
 	{ path: '/bar', component: Bar ,name:'bar'},
 	// { path:'/foo',redirect:'/bar'},

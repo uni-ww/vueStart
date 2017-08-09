@@ -27,13 +27,13 @@
 		name:'home',
 		computed:{
 			count(){
-				return this.$store.state.count
+				return this.$store.store1.state.count
 			},
 			todos1(){
-				return this.$store.state.todos
+				return this.$store.store1.state.todos
 			},
 			todos2(){
-				return this.$store.getters.doneTodos
+				return this.$store.store1.getters.doneTodos
 			}
 		},
 		data(){
@@ -43,13 +43,13 @@
 		},
 		methods:{
 			increment:function(){
-				this.$store.dispatch('increment',{amount:10});
+				this.$store.store1.dispatch('increment',{amount:10});
 			},
 			decrement:function(){
-				this.$store.dispatch('decrement');
+				this.$store.store1.dispatch('decrement');
 			},
 			addNewProp:function(){
-				this.$store.dispatch('addNewProp');
+				this.$store.store1.dispatch('addNewProp');
 			}
 		}
 	}

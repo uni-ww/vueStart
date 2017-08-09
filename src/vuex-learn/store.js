@@ -8,8 +8,8 @@ export default new Vuex.Store({
 		count:2,
 		todos:[
 			{id:1,text:'this is id 1',done:true,flag:'1111'},
-			{id:3,text:'this is id 3',done:true},
-			{id:2,text:'this is id 2',done:false}
+			{id:2,text:'this is id 2',done:true},
+			{id:3,text:'this is id 3',done:false}
 		]
 	},
 	mutations:{

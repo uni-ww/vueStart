@@ -52,3 +52,24 @@
 .padR(@b:10px){
 	padding-right: @b;
 }
+.bRadius(@size:100%){
+	-webkit-border-radius:@size;
+	-moz-border-radius:@size;
+	-ms-border-radius:@size;
+	-o-border-radius:@size;
+	border-radius:@size;
+}
+.transY(@y:-50%){
+	-webkit-transform:transLateY(@y);
+	-moz-transform:transLateY(@y);
+	-ms-transform:transLateY(@y);
+	-o-transform:transLateY(@y);
+	transform:transLateY(@y);
+}
+.transx(@x:-50%){
+	-webkit-transform:transLateX(@x);
+	-moz-transform:transLateX(@x);
+	-ms-transform:transLateX(@x);
+	-o-transform:transLateX(@x);
+	transform:transLateX(@x);
+}
