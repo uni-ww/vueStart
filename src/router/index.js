@@ -157,7 +157,7 @@ const routes = [
  //    { path: '/scrollBar', component: ScrollBar, meta: { scrollToTop: true }}
 ]
 export default new Router({
-	mode: 'history',
+	// mode: 'history',
 	// scrollBehavior,
 	routes
 })

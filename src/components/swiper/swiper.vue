@@ -34,8 +34,9 @@
 </div>
 </template>
 <script>
-import swiper from 'swiper';
-import $ from "jquery";
+import Swiper from 'swiper';
+console.log(Swiper)
+// var Swiper = require('../../assets/lib/js/swiper.js');
 export default {
 	name: 'swiper',
 	data() {
@@ -63,7 +64,7 @@ export default {
 </script>
 <style lang="less" scoped>
 	@import '../../assets/css/style.less'; 
-	@import '../../../static/lib/css/swiper.css';
+	@import '../../assets/lib/css/swiper.css';
 	.swiper-slide{
 		/*height: 100px;
 		line-height: 100px;*/

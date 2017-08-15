@@ -25,9 +25,7 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
       'assets':path.resolve(__dirname,'../src/assets'),
-      'components':path.resolve(__dirname,'../src/components'),
-      'jquery':path.resolve(__dirname,'../static/lib/js/jquery.min'),
-      'swiper':path.resolve(__dirname,'../static/lib/js/swiper')
+      'components':path.resolve(__dirname,'../src/components')
     }
   },
   module: {
