@@ -30,7 +30,6 @@ module.exports = merge(baseWebpackConfig, {
       jQuery: 'jquery',
       Swiper: 'swiper',
       'window.Swiper': 'swiper'
-
     }),
     // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
     new webpack.HotModuleReplacementPlugin(),

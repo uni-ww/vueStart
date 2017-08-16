@@ -55,61 +55,61 @@ export default{
 	@import '../assets/css/style.less';
 	.demo-all{
 		padding: 0 10px;
-	}
-	.add-name{
-		.heiM(40px);
-	}
-	.add-btn{
-		.wid(50%);
-		.heiM(30px);
-		margin:0 auto;
-		color:#fff;
-		background-color: #db1525;
-		.bRadius(5px);
-		.fsize(12px);
-	}
-	ul{
-		margin-top: 10px;
-		li{
-			position:relative;
-			.heiM(36px);
-			margin-top:6px;
-			&>div{
-				float: left;
-				width:100%;
-				text-align: left;
-				padding-left:10px;
-				padding-right:36px
-			}
-			&>b{
-				position:absolute;
-				top:0;
-				right:36px;
+		.add-name{
+			.heiM(40px);
+		}
+		.add-btn{
+			.wid(50%);
+			.heiM(30px);
+			margin:0 auto;
+			color:#fff;
+			background-color: #db1525;
+			.bRadius(5px);
+			.fsize(12px);
+		}
+		ul{
+			margin-top: 10px;
+			li{
+				position:relative;
 				.heiM(36px);
-				font-weight:normal;
-				color:#fff;
-				background-color:#db1525;
-				padding:0 10px;
+				margin-top:6px;
+				&>div{
+					float: left;
+					width:100%;
+					text-align: left;
+					padding-left:10px;
+					padding-right:36px
+				}
+				&>b{
+					position:absolute;
+					top:0;
+					right:36px;
+					.heiM(36px);
+					font-weight:normal;
+					color:#fff;
+					background-color:#db1525;
+					padding:0 10px;
+				}
+				&>i{
+					position:absolute;
+					.wid(36px);
+					.hei(36px);
+					top:0;
+					right: 0;
+					background-color:#ccc;
+					font-size:30px;
+					text-align:center;
+					color:#333;
+				}
 			}
-			&>i{
-				position:absolute;
-				.wid(36px);
-				.hei(36px);
-				top:0;
-				right: 0;
-				background-color:#ccc;
-				font-size:30px;
-				text-align:center;
-				color:#333;
+			li:nth-child(odd){
+				background-color:lightblue;
 			}
-		}
-		li:nth-child(odd){
-			background-color:lightblue;
-		}
-		li:nth-child(even){
-			background-color:green;
-			&>div{
-				color:#fff;
+			li:nth-child(even){
+				background-color:green;
+				&>div{
+					color:#fff;
+				}
 			}
 		}
 	}

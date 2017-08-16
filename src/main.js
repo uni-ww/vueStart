@@ -3,7 +3,6 @@ import App from './App'
 import router from './router/index';
 import store1 from './vuex-learn/store';
 import store2 from './vuex-demo/store';
-import $ from "jquery";
 const app = new Vue({
 	router,
 	store:{

@@ -31,12 +31,18 @@
 	</div>
 	<h1>this is h1</h1>
 	<router-view></router-view>
+	<div class="move" @click="move()">Move Sport</div>
+	<div class="sport-move">
+		<i class="iconfont">&#xe66a;</i>
+	</div>
+
 </div>
 </template>
 <script>
-import Swiper from 'swiper';
-console.log(Swiper)
-// var Swiper = require('../../assets/lib/js/swiper.js');
+import Move from '../../assets/lib/js/move';
+import $ from "jquery";
+import Swiper from "swiper";
+// console.log($)
 export default {
 	name: 'swiper',
 	data() {
@@ -51,6 +57,11 @@ export default {
 	methods: {
 		testJq(){
 			$('#result').html('222');
+		},
+		move(){
+			Move('.sport-move')
+			  .add('margin-left', 200)
+			  .end();
 		}
 	},
 	mounted() {
@@ -87,5 +98,13 @@ export default {
 	}
 	.router-link{
 		line-height:30px;
+	}
+	.move{
+		.fsize(24px);
+	}
+	.sport-move{
+		.wid(100px);
+		.hei(100px);
+		border:1px solid #ccc;
 	}
 </style>

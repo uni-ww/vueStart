@@ -4,6 +4,7 @@ import Swiper from '../components/swiper/swiper';
 import HomeTem from '../components/home';
 import VuexDemo from '../components/vuex-demo';
 import Start from '../components/start';
+import UseImg from '../components/useImg'
 // const Header = resolve => {
 // 	require.ensure(['../components/headFoot/header.vue'],() => {
 // 		resolve(require('../components/headFoot/header.vue'));
@@ -107,6 +108,7 @@ const routes = [
 	{ path:'', component:Start},
 	{ path:'/home', component:HomeTem},
 	{ path: '/vuexDemo', component: VuexDemo },
+	{path:'/useImg',component:UseImg},
 	{ path: '/foo', component: Foo },
 	{ path:'/swiper',component:Swiper},
 	// { path: '/foo', component: Foo },
