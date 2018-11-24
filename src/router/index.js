@@ -104,8 +104,12 @@ const scrollBehavior = (to,from,savedPosition) => {
 		return position;
 	}
 }
+
+// vedio study
+import Index from "../s-vedio/index";
 const routes = [
-	{ path:'', component:Start},
+	{ path:'/', component:Index},
+	{ path:'/start', component:Start},
 	{ path:'/home', component:HomeTem},
 	{ path: '/vuexDemo', component: VuexDemo },
 	{path:'/useImg',component:UseImg},
