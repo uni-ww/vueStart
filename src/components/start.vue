@@ -4,6 +4,7 @@
 	    <router-link class="router-link" to="/home">学习vuex</router-link>
 	    <router-link class="router-link" to="/vuexDemo">vuex-demo</router-link>
 	    <router-link class="router-link" to="/useImg">动态引入img</router-link>
+	    <router-link class="router-link" to="/useVux">学习useVux</router-link>
     </div>
 </template>
 <script>

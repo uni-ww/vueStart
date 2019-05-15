@@ -6,7 +6,10 @@
 		</div>
 		<div class="add-btn" @click="add()">添加</div>
 		<ul>
-			<li v-for="(list,index) in lists">
+			<li
+                v-for="(list,index) in lists"
+                :key="index"
+            >
 				<div>{{list.name}}</div>
 				<b @click="modify(list,index)">修改</b>
 				<i @click="deletename(index)">×</i>

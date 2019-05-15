@@ -1,5 +1,6 @@
 // actions.js 页面执行的逻辑操作
 import * as mod from "./mutation-type";
+
 export default{
 	addName({commit},obj){
 		commit(mod.ADD_NAME,obj.name);

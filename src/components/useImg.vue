@@ -1,6 +1,6 @@
 <template>
 <div class="useImg">
-	<h2>this is useImg</h2> 
+	<h2>this is useImg</h2>
 	<div class="img-list">
 		<div>
 			<img src="../assets/image/1.jpg" alt="" />
@@ -8,22 +8,22 @@
 		<div>
 			<img src="../assets/image/your_name.jpg" alt="" />
 		</div>
-		<div class="backgroundImg" style="background-image:url('../../assets/image/2.jpg');">
-			
+		<div class="backgroundImg" :style="{backgroundImage:'url('+'../assets/image/2.jpg'+')'}">
+
 		</div>
 		<div class="backgroundImg backgroundImg1">
-			
+
 		</div>
 		<div class="backgroundImg backgroundImg2">
-			
+
 		</div>
-		<template v-for="(img,index) in imgUrl">
+		<div v-for="(img,index) in imgUrl" :key="index">
 		<!-- {{img}} -->
 		<!-- <img :src="img" alt=""> -->
 		<div class="backgroundImg" :style="{backgroundImage:'url('+img+')'}">
-			
+
 		</div>
-		</template>
+		</div>
 	</div>
 </div>
 </template>
